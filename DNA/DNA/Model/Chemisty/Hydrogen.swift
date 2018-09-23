@@ -9,10 +9,13 @@
 import Foundation
 
 class Hydrogen : Atom {
+    var bonds: Bond
     var bag: [Atom]
+    
     
     init() {
         self.bag = [Proton(),Electron()] as! [Atom]
+        self.bonds = Bond(number: 1)
     }
 
 }

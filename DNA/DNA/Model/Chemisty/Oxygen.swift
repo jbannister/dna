@@ -9,11 +9,13 @@
 import Foundation
 
 class Oxygen : Atom {
+    var bonds: Bond
     var bag: [Atom]
     
     init() {
         self.bag = [Proton.Protons(count: 8),
                     Neutron.Neutrons(count: 8),
                     Electron.Electrons(count: 8)] as! [Atom]
+        self.bonds = Bond(number: 2)
     }
 }

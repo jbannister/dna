@@ -1,5 +1,5 @@
 //
-//  Atom.swift
+//  Bond.swift
 //  DNA
 //
 //  Created by Jan Bannister on 23/09/2018.
@@ -8,7 +8,11 @@
 
 import Foundation
 
-protocol Atom : Lepton, Quark {
-    var bag : [Atom] { get }
-    var bonds : Bond { get }
+class Bond {
+    var number : Int
+    
+    init(number: Int) {
+        self.number = number
+    }
+    
 }
